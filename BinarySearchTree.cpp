@@ -11,10 +11,10 @@ class Node {
         Node* rightChild;
 
         //membuat constructor untuk class node
-        Node(string i, Node* I, Node* r){
+        Node(string i, Node* l, Node* r){
             //memberi nilai parameter ke variabel
             info = i;
-            leftChild = I;
+            leftChild = l;
             rightChild = r;
         }
 };
@@ -120,19 +120,60 @@ class BinaryTree {
 
 int main()
 {
-    //deklarasi object x sebagai object binarytree
+    // deklarasi object x sebagai object BinaryTree
     BinaryTree x;
 
-    //perulangan while selama nilai benar
+    // perulangan while selama bernilai benar
     while (true)
     {
-        //membuat menu program dan input pilihan
+        // membuat menu program dan input pilihan
         cout << "\nMenu" << endl;
         cout << "1. implement insert operation" << endl;
         cout << "2. perform inorder traversal" << endl;
         cout << "3. perform preorder traversal" << endl;
         cout << "4. perform postorder traversal" << endl;
-        cout << "5. exit " << endl;
-        cout << "\n Enter your choice (1-5) : ";
+        cout << "5. Exit" << endl;
+        cout << "\nEnter your choice (1-5) : ";
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        // membuat conditional statement dati input ch
+        switch (ch)
+        {
+        case '1':
+        {
+            cout << "Enter a word : ";
+            string word;
+            cin >> word;
+            x.insert(word);
+            break;
+        }
+        case '2':
+        {
+            x.inorder(x.ROOT);
+            break;
+        }
+        case '3':
+        {
+            x.preorder(x.ROOT);
+            break;
+        }
+        case '4':
+        {
+            x.postorder(x.ROOT);
+            break;
+        }
+        case '5':
+        {
+            return 0;
+        }
+        default:
+        {
+            cout << "Invalid Option" << endl;
+            break;
+        }
+        }
     }
 }
