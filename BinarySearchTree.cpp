@@ -17,6 +17,9 @@ class Node {
             leftChild = I;
             rightChild = r;
         }
+};
 
-
+//membuat class binarytree
+class BinaryTree {
+    
 }
