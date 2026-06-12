@@ -30,5 +30,9 @@ class BinaryTree {
     BinaryTree() {
         ROOT = nullptr;
     }
-    
+
+    //membuat prosedur insert
+    void insert(string element) {
+        
+    }
 }
