@@ -21,5 +21,8 @@ class Node {
 
 //membuat class binarytree
 class BinaryTree {
-    
+
+    //memberikan akses modifier dan deklarasi object
+    public :
+        Node *ROOT;
 }
