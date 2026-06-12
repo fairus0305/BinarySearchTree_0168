@@ -12,7 +12,10 @@ class Node {
 
         //membuat constructor untuk class node
         Node(string i, Node* I, Node* r){
-            
+            //memberi nilai parameter ke variabel
+            info = i;
+            leftChild = I;
+            rightChild = r;
         }
 
 
