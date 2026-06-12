@@ -40,8 +40,14 @@ class BinaryTree {
         newNode->leftChild = nullptr;
         newNode->rightChild = nullptr;
 
-        Node* parrent = nullptr;
+        Node* parent = nullptr;
         Node* currentNode = nullptr;
         search(element, parent, currentNode);
+
+        //membuat conditional statment
+        if (parent == nullptr) {
+            ROOT = newNode;
+            return;
+        }
     }
-}
+};
