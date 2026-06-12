@@ -120,5 +120,6 @@ class BinaryTree {
 
 int main()
 {
-    
+    //deklarasi object x sebagai object binarytree
+    BinaryTree x;
 }
