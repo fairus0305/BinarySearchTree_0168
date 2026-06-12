@@ -3,5 +3,10 @@ using namespace std;
 
 //membuat class node
 class node {
-    
+
+    //memberi akses modifer serta mendeklarasi variabel dan object node
+    public :
+        string info;
+        Node* leftChild;
+        Node* rightChild;
 }
