@@ -33,6 +33,15 @@ class BinaryTree {
 
     //membuat prosedur insert
     void insert(string element) {
-        
+
+        //memberikan nilai untuk setiap object yang berada di dalam prosedu insert
+        Node *newNode = new Node(element, nullptr, nullptr);
+        newNode->info = element;
+        newNode->leftChild = nullptr;
+        newNode->rightChild = nullptr;
+
+        Node* parrent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode);
     }
 }
